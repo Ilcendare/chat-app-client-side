@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.text.Text?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.chatroom.app.viewcontrollers.CreateUserController">
+   <children>
+      <VBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefWidth="520.0" spacing="10.0">
+         <children>
+            <AnchorPane maxWidth="-Infinity" prefHeight="38.0" prefWidth="187.0">
+               <children>
+                  <Circle fx:id="themeButton" fill="DODGERBLUE" layoutX="99.0" layoutY="38.0" onMouseClicked="#switchTheme" radius="10.0" stroke="BLACK" strokeType="INSIDE" AnchorPane.leftAnchor="89.0" AnchorPane.topAnchor="28.0">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                  </Circle>
+                  <Text fx:id="switchThemeLabel" layoutY="13.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="text-log" text="Switch Theme" textAlignment="CENTER" wrappingWidth="197.0" AnchorPane.leftAnchor="0.0" />
+               </children>
+            </AnchorPane>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </Separator>
+            <HBox alignment="CENTER" spacing="15.0">
+               <children>
+                  <Label fx:id="usernameLabel" text="Username" />
+                  <TextField fx:id="usernameField" promptText="Enter your username" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" spacing="15.0">
+               <children>
+                  <Label fx:id="passwordLabel" text="Password" />
+                  <PasswordField fx:id="passwordField" promptText="Enter your password" />
+               </children>
+               <padding>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </padding>
+            </HBox>
+            <Button fx:id="createUserButton" onAction="#createUser" text="Create User">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+            <HBox alignment="CENTER" spacing="10.0">
+               <children>
+                  <Text fx:id="textLog" styleClass="text-log" textAlignment="LEFT" />
+               </children>
+               <padding>
+                  <Insets bottom="0" left="0" right="0" top="30.0" />
+               </padding>
+            </HBox>
+            <Separator prefWidth="200.0">
+               <VBox.margin>
+                  <Insets bottom="20.0" top="20.0" />
+               </VBox.margin>
+            </Separator>
+            <Button fx:id="goBackButton" onAction="#goBack" text="Back to login">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor></Button>
+         </children>
+      </VBox>
+   </children>
+   <padding>
+      <Insets bottom="30.0" left="30.0" right="30.0" top="30.0" />
+   </padding>
+</VBox>

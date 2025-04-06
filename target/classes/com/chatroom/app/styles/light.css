@@ -1,0 +1,69 @@
+.root {
+    -fx-font-family: "Arial";
+    -fx-background-color: #d2d8dd;
+}
+
+.label {
+    -fx-text-fill: #444;
+    -fx-font-size: 17px;
+    -fx-font-weight: bold;
+}
+
+.text-log {
+    -fx-font-size: 18px;
+}
+
+.text-area {
+    -fx-font-size: 22px;
+    -fx-background-color: #ecf0f1;
+    -fx-background-radius: 20px;
+    -fx-control-inner-background: #ecf0f1;
+    -fx-text-fill: #666;
+    -fx-border-color: none;
+    -fx-border-radius: 0;
+    -fx-padding: 7px 14px;
+}
+
+
+.text-field {
+    -fx-font-size: 17px;
+    -fx-background-color: #ecf0f1;
+    -fx-background-radius: 20px;
+    -fx-text-fill: #444;
+    -fx-prompt-text-fill: #aaa;
+    -fx-padding: 7px 14px;
+    -fx-border-color: none;
+    -fx-border-radius: 0;
+}
+
+.button {
+    -fx-font-size: 17px;
+    -fx-background-color: #3279ec;
+    -fx-background-radius: 20px;
+    -fx-text-fill: #ddd;
+    -fx-padding: 7px 14px;
+}
+
+/* .rooms-box {
+    -fx-background-color: #3279ec;
+    -fx-background-radius: 0 20 20 0;
+    -fx-text-fill: #ddd;
+    -fx-padding: 7px 14px;
+} */
+
+.participants-box {
+    -fx-background-color: #ecf0f1;
+    -fx-text-fill: #555;
+    -fx-padding: 7px 14px;
+}
+
+.separator {
+    -fx-background-color: #444;
+}
+
+.chat-box {
+    -fx-background-color: #d2d8dd;
+    -fx-text-fill: #555;
+    -fx-border-color: none;
+    -fx-border-radius: 0;
+}

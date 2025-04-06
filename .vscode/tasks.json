@@ -1,0 +1,31 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "verify",
+            "type": "shell",
+            "command": "mvn -B verify",
+            "group": "build"
+        },
+        {
+            "label": "test",
+            "type": "shell",
+            "command": "mvn -B test",
+            "group": "test"
+        },
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "mvn clean compile",
+            "group": "build"
+        },
+        {
+            "label": "run_server",
+            "type": "shell",
+            "command": "cd 'C:\\Users\\TheTo\\Documents\\NetBeansProjects\\Chat Room Project\\server' ; & 'C:\\Program Files\\Java\\jdk-22\\bin\\java.exe' '@C:\\Users\\TheTo\\AppData\\Local\\Temp\\cp_6fv6jo9dlevl7ug03zvksveid.argfile' '-m' 'com.chatroom.server/com.chatroom.server.Server'",
+            "group": "none"
+        }
+    ]
+}
